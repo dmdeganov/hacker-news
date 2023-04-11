@@ -1,0 +1,41 @@
+.comment {
+  margin-bottom: 16px;
+  &__text{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
+    line-height: 1.3;
+  }
+
+  &--nested {
+    margin-left: 25px;
+  }
+  &__info {
+    display: flex;
+    gap: 24px;
+    color: $link-color;
+    &:not(:last-child){
+      margin-bottom: 8px;
+    }
+    span {
+      margin: 4px;
+    }
+  }
+  &__show-comments-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    &.disabled{
+      cursor: unset;
+    }
+  }
+  &__arrow{
+    transition: all 0.3s;
+    &--expanded{
+      transform: rotate(90deg);
+    }
+  }
+  a{
+    color: orange;
+  }
+}

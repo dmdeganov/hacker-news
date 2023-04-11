@@ -22,6 +22,7 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         'react/prop-types': 0,
+        'jsx-a11y/click-events-have-key-events': 0,
         'react/jsx-curly-brace-presence': ['error', {props: 'never', children: 'never'}],
         'react/self-closing-comp': [
             'error',
