@@ -33,7 +33,7 @@ const Comment = ({comment, nested = true}: CommentProps) => {
     hasNestedComments &&
     (isNestedCommentsLoading ? (
       <div>
-        <CircularProgress />
+        <CircularProgress size={24} />
       </div>
     ) : (
       nestedComments?.map(comment => <Comment key={comment.id} comment={comment} />)

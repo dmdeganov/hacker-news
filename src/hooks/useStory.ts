@@ -9,10 +9,8 @@ export const useStory = (id: number) => {
   return useQuery({
     queryFn: () => fetchStory(id),
     queryKey: ['story', id],
-    staleTime: 1000 * 60,
     onError: err => {
       if (err instanceof AxiosError) {
-        console.log('enqueueSnackbar shows message');
         enqueueSnackbar(err.message, {
           variant: 'error',
         });

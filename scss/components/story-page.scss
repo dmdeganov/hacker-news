@@ -1,0 +1,9 @@
+.story-page {
+  &__comments-loading, &__loading, &__empty-comments {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

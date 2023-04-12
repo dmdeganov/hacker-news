@@ -10,10 +10,8 @@ export const useComments = (ids: number[], enabled  = true) => {
     queryFn: () => fetchComments(ids),
     queryKey:['comments', ...ids],
     enabled: enabled && ids.length > 0,
-    staleTime: 1000*60,
     onError: err => {
       if (err instanceof AxiosError) {
-        console.log('enqueueSnackbar shows message');
         enqueueSnackbar(err.message, {
           variant: 'error',
         });

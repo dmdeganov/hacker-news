@@ -1,1 +1,6 @@
-react-ts-playground
+
+## Installation
+yarn install
+
+## Run
+yarn start

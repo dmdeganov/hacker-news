@@ -6,13 +6,28 @@
   h1 {
     margin-bottom: 24px;
   }
+  &__link {
+    word-break: break-all;
+  }
   padding: 32px 0;
   &__info {
+    flex-wrap: wrap;
     display: flex;
-    gap: 24px;
+    column-gap: 24px;
     color: $link-color;
+    & > * {
+      flex-shrink: 0;
+    }
     span {
       margin: 4px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    h1 {
+     font-size: 18px;
+    }
+    &__info{
+      font-size: 14px;
     }
   }
 }

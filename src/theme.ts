@@ -9,5 +9,9 @@ export const theme = createTheme({
     secondary: {
       main: '#191b24',
     },
+    action: {
+      disabled: '#b8c1c6',
+      disabledBackground: '#b8c1c6',
+    },
   },
 });

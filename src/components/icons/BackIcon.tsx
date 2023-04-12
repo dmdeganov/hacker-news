@@ -1,6 +1,3 @@
-
-
-
 import React, {FC, SVGProps} from 'react';
 
 const ArrowRight: FC<SVGProps<SVGSVGElement>> = props => (

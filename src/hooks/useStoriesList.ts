@@ -13,7 +13,6 @@ export const useStoriesList = () => {
     staleTime: 1000* 60,
     onError: err => {
       if (err instanceof AxiosError) {
-        console.log('enqueueSnackbar shows message')
         enqueueSnackbar(err.message, {
           variant: 'error',
         });

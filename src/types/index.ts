@@ -4,13 +4,11 @@ export interface Item {
   by: string;
   time: number;
   kids?: number[];
-  deleted?: boolean;
-  title?: string;
-  text?: string;
-  parent?: number;
-  descendants?: number;
-  url?: string;
-  score?: number;
+  title: string;
+  text: string;
+  descendants: number;
+  url: string;
+  score: number;
 }
 
 type CommentType = Omit<Item, 'tittle' | 'descendants' | 'score' | 'url'>;

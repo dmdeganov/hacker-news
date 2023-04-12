@@ -1,11 +1,8 @@
 .stories-list {
   min-height: 100%;
-  width: 80%;
+  position: relative;
+  max-width: 868px;
   margin: 0 auto;
-  &__refresh-button{
-    margin-top: 4px !important;
-  }
-
   &__heading {
     display: flex;
     justify-content: center;
@@ -17,15 +14,32 @@
       text-align: center;
     }
   }
+  &__refresh-button {
+    margin-top: 4px !important;
+  }
   &__items {
     display: flex;
     flex-direction: column;
     gap: 28px;
   }
-  &__progress{
+  &__progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 230px);
   }
+  @media screen and (max-width: 576px) {
+    &__heading{
+      h1 {
+        margin-right: auto;
+      }
+      font-size: 20px;
+    }
+
+  }
+
 }

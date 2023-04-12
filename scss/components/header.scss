@@ -5,6 +5,7 @@ header{
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  flex-shrink: 0;
   height: 64px;
   text-align: right;
 }
