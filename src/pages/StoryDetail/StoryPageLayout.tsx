@@ -9,12 +9,13 @@ interface Props {
 
 const StoryPageLayout: React.FC<Props> = ({children}) => {
   const navigate = useNavigate();
-  const onBack = () => navigate('/');
-
+  const goBack = () => {
+    navigate(-1);
+  }
   return (
     <div className="story-page">
-      <Button variant="outlined" size="small" startIcon={<BackIcon />} onClick={onBack}>
-        Back to stories list
+      <Button variant="outlined" size="small" startIcon={<BackIcon />} onClick={goBack}>
+          Back to stories list
       </Button>
       {children}
     </div>

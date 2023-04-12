@@ -9,7 +9,7 @@ export const axios = axiosDefault.create({
 export const fetchItem = async (id: number) => await axios.get(`item/${id}.json`);
 
 export const fetchStories = async () => {
-  const {data: storyIds} = await axios.get('beststories.json');
+  const {data: storyIds} = await axios.get('newstories.json');
   const responsesArr = await Promise.all(storyIds.slice(0, 100).map(fetchItem));
   return Array.isArray(responsesArr) ? responsesArr.map(response => response.data as StoryType) : [];
 };
