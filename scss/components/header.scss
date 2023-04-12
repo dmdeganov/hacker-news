@@ -8,4 +8,8 @@ header{
   flex-shrink: 0;
   height: 64px;
   text-align: right;
+ a, a:visited, a:link {
+   color: $base-text-color;
+   text-decoration: none;
+ }
 }

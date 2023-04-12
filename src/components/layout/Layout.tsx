@@ -1,16 +1,18 @@
 import React from 'react';
-import {Outlet, ScrollRestoration} from 'react-router-dom';
+import {Link, Outlet, ScrollRestoration} from 'react-router-dom';
 
 const Layout = () => {
   return (
     <>
       <header>
-        <h2>Hacker News</h2>
+        <Link to="/">
+          <h2>Hacker News</h2>
+        </Link>
       </header>
       <main>
         <Outlet />
       </main>
-      <ScrollRestoration/>
+      <ScrollRestoration />
     </>
   );
 };
