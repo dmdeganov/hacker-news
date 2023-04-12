@@ -29,15 +29,8 @@
       margin: 4px;
       flex-shrink: 0;
     }
-    a {
-      color: inherit;
-      text-decoration: none;
-      flex-shrink: 0;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
+  
   @media screen and (max-width: 576px) {
     .story-title {
       font-size: 14px;

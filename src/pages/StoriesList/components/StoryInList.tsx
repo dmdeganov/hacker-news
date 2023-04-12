@@ -24,9 +24,7 @@ const StoryInList = ({id, by, title, url, descendants, time, score, kids}: Story
             minute: 'numeric',
           })}
         </span>
-        <span>
-          <Link to={link}>{`${descendants} ${descendants === 1 ? 'comment' : 'comments'}`}</Link>
-        </span>
+        <span>{`${descendants} ${descendants === 1 ? 'comment' : 'comments'}`}</span>
       </div>
     </div>
   );
